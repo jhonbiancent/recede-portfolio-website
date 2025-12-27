@@ -1,0 +1,97 @@
+.hobbyMainPageContainer{
+    position: absolute;
+    top: 220vh;
+    left: 0;
+    width: 100vw;
+    height: 200vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    gap:10%;
+    background-color:black;
+}
+.text{
+    color:rgba(255, 255, 255, 0.3);
+    font-size:1.2rem;
+}
+.textHighlight{
+    color:white;
+    font-size: 1.2rem;
+}
+.textHighlightHeader{
+    font-size:1.6rem;
+}
+.text2{
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.3);
+}
+.imageContainer{
+    width: 50%;
+    height: auto;
+    position: relative;
+    border-top-left-radius: 1rem;
+    overflow: hidden;
+}
+.imageContainer::after{
+    content:"";
+    background:linear-gradient(135deg, rgba(0, 0, 0, 0), black);
+    position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width: 100%;
+}
+.image{
+    width:100%;
+    height:auto;
+    opacity:0.9;
+}
+.cardContainer{
+    width:100%;
+    height:15%;
+    display:flex;
+    justify-content: center;
+    gap:5%;
+}
+.card{
+    width:35%;
+    height:100%;
+    border-radius:1rem;
+    border-top:solid 1px rgba(255, 255, 255, 0.3);
+    border-left: solid 1px rgba(255, 255, 255, 0.2);
+    border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+    border-right: solid 1px rgba(255, 255, 255, 0.1);
+    background-color: rgb(5, 5, 5);
+    transition: 0.2s linear;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:1%;
+}
+.card:hover{
+    background-color: rgb(12, 12, 12);
+}
+.titleArea{
+    width:100%;
+    height:20%;
+    display: flex;
+    align-items: center;
+}
+
+.icon{
+    font-size: 1.5rem;
+    margin-left: 5%;
+}
+.description{
+    color:rgba(255, 255, 255, 0.2);
+    margin-left:5%;
+    font-size: 1.1rem;
+    font-style: italic;
+}
+.description2{
+    color: rgba(255, 255, 255, 0.2);
+    margin-left: 5%;
+    font-style: italic;
+}

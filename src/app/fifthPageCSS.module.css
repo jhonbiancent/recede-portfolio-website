@@ -1,0 +1,118 @@
+.fifthPageMainContainer {
+    position: absolute;
+    top: 420vh;
+    left: 0;
+    width: 100vw;
+    height: 200vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    background:linear-gradient(to left, rgb(14, 14, 17), rgba(255, 255, 255, 0.02));
+    gap:1%;
+    padding-top:5%;
+}
+.fifthPageMainContainer h1{
+    font-size: 2.4rem;
+    position: relative;
+}
+.fifthPageMainContainer h1::after {
+    content:" ";
+    width:0.5%;
+    height:100%;
+    position:absolute;
+    background-color: rgba(255, 255, 255, 0.626);
+    left:-20;
+    top:0;
+}
+.fifthPageMainContainer h1::before {
+    content: " ";
+    width: 0.5%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.626);
+    right: -20;
+    top: 0;
+}
+
+.videoContainer{
+    padding: 0;
+    width:62%;
+    height: auto;
+    border-radius:20px;
+    border: solid rgba(255, 255, 255, 0.453) 1px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s linear;
+    opacity: 0.6;
+}
+.videoContainer:hover{
+    border: solid rgba(255, 255, 255, 0.8) 1px;
+}
+.videoContainer video:hover{
+    transform: scale(1.02);
+}
+.fifthPageMainContainer video{
+    width:100%;
+    height: auto;
+    border-radius: 20px;
+    transition: 0.4s linear;
+}
+.photoContainer{
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgb(16, 16, 16); */
+    border-radius: 20px;
+}
+.photoContainerPadding{
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1%;
+}
+.photo{
+    height: 100%;
+    width: auto;
+    border-radius: 20px;
+    border:solid rgba(255, 255, 255, 0.453) 1px;
+    transition: 0.2s ease-in-out;
+}
+.photo:hover{
+    transform: scale(1.001);
+    border: solid white 1px;
+    cursor: pointer;
+}
+.collapseButton{
+    width:63%;
+    height:3rem;
+    background-color: rgb(16, 16, 16);
+    color:white;
+    border:none;
+    border-radius: 20px;
+    transition: 0.1s ease-in-out;
+}
+.collapseButton:hover{
+    background-color: rgb(20, 20, 20);
+}
+
+.descriptionContainer{
+    height:80vh;
+    width:60%;
+    gap:1rem;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    color:white;
+    padding-left:15%;
+}
+.descriptionContainer li{
+    margin-left: 3%;
+
+}

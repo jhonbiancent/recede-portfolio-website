@@ -1,0 +1,176 @@
+body{
+    margin:0;
+    padding:0;
+    height: 1500vh;
+    overflow-x: hidden;
+    background-color: black;
+    scroll-behavior: smooth;
+    font-family: var(--font-karla);
+}
+:root {
+    --powder: rgb(39, 54, 91);
+    --light-powder: rgb(41, 74, 158);
+    --turquoise:rgb(0, 255, 242);
+    --lavender:rgb(136, 0, 255);
+}
+.developerNickname{
+    font-size:4rem;
+    font-weight: 1000;
+    margin: 0;
+}
+.developerName{
+    margin: 0;
+    font-size:2.5rem;
+}
+.developerSkills{
+    margin-top:1rem;
+    margin-bottom:0;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.developerSkillsDescriptionContainer{
+    margin: 0;
+    width:80%;
+}
+.developerSkillsDescription{
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+.firstPageMainContainer::after{
+    position:absolute;
+    content:"";
+    background-color: rgba(255, 255, 255, 0.675);
+    width:90%;
+    height:0.2rem;
+    left:5%;
+    bottom:8%;
+    border-radius:1rem;
+}
+.firstPageMainContainer::before{
+    content: "";
+    inset: 0;
+    scale:1.2;
+    position: absolute;
+    background-image: url("./assets/noise.jpg");
+    animation: grain 8s infinite;
+    opacity: 0.06;
+    pointer-events: none;
+}
+.firstPageMainContainer{
+    overflow:hidden;
+    z-index: 0;
+    position:absolute;
+    left: 0;
+    height: 100vh;
+    width:100vw;
+    display: flex;
+    align-items: center;
+    color:white;
+    /* background:linear-gradient(to left, rgb(18, 1, 31),rgb(34, 13, 51),rgb(56, 28, 77)); */
+}
+@keyframes grain {
+
+    0% {
+            transform: scale(1.2)
+        }
+    50%{
+        transform: scale(2)
+    }
+        100% {
+            transform: scale(1.2)
+        }
+}
+.developerDescriptionSide{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    width:55%;
+    height: 100vh;
+}
+.developerImageSide{
+    width:45%;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.developerRGB::after{
+    z-index:-1;
+    position:absolute;
+    content:"";
+    width:30rem;
+    height:30rem;
+    border-radius: 50%;
+    background:radial-gradient(white,rgba(255, 255, 255, 0.197), rgba(56, 28, 77, 0.044) ,rgba(56, 28, 77, 0.038));
+}
+.developerRGB{
+    position: relative;
+    width:18rem;
+    height:18rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:50%;
+    border: solid white 1px;
+}
+.developerPhotoContainer{
+    width:95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: white;
+}
+.developerPhoto{
+  width:100%;
+  height: auto;
+}
+
+.moreButtonsSection{
+    margin-top:2%;
+    width:80%;
+    height:6%;
+    padding:0;
+    font-size: 0.9rem;
+    display: flex;
+    gap:3%;
+}
+.getInTouchButton{
+    width:25%;
+    height:100%;
+    font-size:1rem;
+    color:white;
+    border-radius: 2rem;
+    border:white 1px solid;
+    /* border-left: none;
+    border-top: none; */
+    /* background:linear-gradient(to right, rgb(51, 173, 144),rgb(135, 92, 152)); */
+    background:linear-gradient(to right, rgb(39, 54, 91),rgba(0, 0, 0, 0.311));
+    transition: 0.2s ease-in-out;
+}
+.getInTouchButton:hover{
+    width: 28%;
+    cursor: pointer;
+    background: linear-gradient(to right,rgb(39, 54, 91),rgb(39, 54, 91), rgba(0, 0, 0, 0.311));
+}
+.icnButtons{
+    position: relative;
+    height:100%;
+    width:auto;
+    border: white 1px solid;
+    border-radius:0.3rem;
+}
+.icnButtons:hover{
+    cursor: pointer;
+}
+.icnButtons::after{
+    z-index: 1;
+    position: absolute;
+    content: "";
+    inset: 0;
+    width: 20rem;
+    height: 20rem;
+    background:white;
+}

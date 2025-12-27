@@ -1,0 +1,184 @@
+.fourthPageMainContainer {
+    position: absolute;
+    top: 720vh;
+    left: 0;
+    width: 100vw;
+    height: 300vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    background-color: black;
+    gap:5%;
+}
+.title{
+    font-size: 2rem;
+    margin-bottom: 0;
+    position: relative;
+}
+.title:before{
+    content:"";
+    width:2px;
+    height:220%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.459);
+    left:-20;
+    top:5;
+}
+.subtitle{
+    margin-top:15;
+    color:rgba(255, 255, 255, 0.2);
+    font-size:1.5rem;
+}
+.mainImageContainer{
+    width:60%;
+    position: relative;
+    align-self: flex-start;
+}
+.mainImageContainer:before{
+  content: "";
+  position: absolute;
+  background: linear-gradient(45deg,black,rgba(0, 0, 0, 0)70%);
+  z-index:3;
+  width:90%;
+  height:100vh;
+  left:0;
+  top:0;
+}
+.mainImage{
+    width:100%;
+    height: auto;
+    opacity: 0.8;
+}
+
+.secondContainer{
+    width:100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.secondContainer h2{
+    position: absolute;
+    top:50;
+    
+}
+.secondContainer::before{
+    content: "";
+    height:1px;
+    width:80%;
+    background-color: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    top:0;
+}
+
+.firstContainer{
+    width: 100%;
+    height:50%;
+    position: relative;
+}
+.titleContainer{
+    position: absolute;
+    right: 50;
+    top: 80;
+    text-align: end;
+}
+.titleContainer h1{
+    font-size: 4rem;
+    margin-bottom: 20;
+}
+.titleContainer span{
+    font-size: 1.5rem;
+    margin-right: 5;
+    color:rgba(255, 255, 255, 0.3);
+}
+.titleContainer p{
+    color: rgba(255, 255, 255, 0.3);
+    margin-right: 10;
+}
+.photoContainer{
+    align-self:end;
+    margin-right: 0;
+    width:50%;
+    height:70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1%;
+}
+.descriptionContainer{
+    width:45%;
+    padding-left: 5%;
+    padding-top: 10%;
+}
+
+.descriptionContainer p{
+    color: white;
+   font-size: 1.3rem;
+}
+.descriptionContainer li{
+   color:rgba(255, 255, 255, 0.3);
+   margin-left: 2%;
+   font-size: 1.1rem;
+}
+.photo1{
+    width:85%;
+    height: auto;
+    border-radius: 10px;
+    transition: ease-in-out 0.2s;
+    border: rgba(255, 255, 255, 0.082) solid 1px;
+    z-index: 1;
+}
+.photo1:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+    border-radius: 5px;
+    border:solid 1px rgba(255, 255, 255, 0.215);
+}
+.secondPhotoContainer{
+    width:100%;
+    height:25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1%;
+}
+.link {
+    margin-top: 3%;
+    width: 13rem;
+    height: 3rem;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    transition: 0.2s linear;
+}
+
+.link:hover {
+    background-color: var(--powder);
+}
+
+.link:hover {
+    transform: translateX(2%);
+}
+.photo2{
+    height:52%;
+    width: auto;
+    border-radius:5px;
+    border:rgba(255, 255, 255, 0.138) solid 1px;
+    transition: ease-in-out 0.2s;
+    z-index: 1;
+}
+.photo2:hover{
+    transform: scale(1.01);
+    cursor: pointer;
+    border: solid 1px rgba(255, 255, 255, 0.477);
+}
+.icon {
+    margin-left: 2%;
+}

@@ -1,0 +1,206 @@
+.thirdPageMainContainer{
+    position: absolute;
+    top: 420vh;
+    left: 0;
+    width: 100vw;
+    height: 300vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    background-color: black;
+}
+.thirdPageMainContainer:before{
+    position: absolute;
+    top:10;
+    content:"";
+    height:1px;
+    width:80%;
+    background-color: rgba(255, 255, 255, 0.486);
+}
+.thirdPageMainContainer h2{
+    font-size:5rem;
+    font-style:italic;
+    position:relative;
+}
+
+.titleContainer{
+    position: absolute;
+    top:100;
+}
+.title{
+    font-size:2rem;
+    margin-bottom:0;
+}
+.subtitle{
+    color:rgba(255, 255, 255, 0.2);
+    font-size:1.1rem;
+}
+.landingPageContainer{
+    height:20%;
+    width:100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: rgb(10, 10, 10);
+}
+
+.descriptionContainer{
+    width:30%;
+    height:100%;
+    padding-left:2%;
+    display: flex;
+    flex-direction: column;
+    gap:1%;
+    padding-left:5%;
+}
+.descriptionContainer li{
+    color:rgba(255, 255, 255, 0.4);
+    margin-left:5%;
+    font-size: 1.1rem;
+}
+.link{
+    margin-top:3%;
+    width:50%;
+    height:12%;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:8px;
+    margin-left:2%;
+    transition: 0.2s linear;
+}
+.link:hover{
+   background-color: var(--powder);
+}
+.link:hover{
+    transform: translateX(2%);
+}
+.icon{
+    margin-left:2%;
+}
+.title1{
+    font-size:2rem;
+    font-weight: 400;
+}
+.carouselContainer{
+    width:50%;
+    height:100%;
+    align-self: flex-end;
+    position: absolute;
+    display:flex;
+    align-items: center;
+    right:40;
+}
+.apiPageContainer{
+    width:100%;
+    height:30%;
+    background-color: black;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap:2%;
+}
+.card{
+    width:23%;
+    height:80%;
+    background-color: rgb(10, 10, 10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 1rem;
+    padding:2%;
+    gap:6%;
+    transition: 0.2s linear;
+}
+.card:hover{
+    background-color: rgb(15, 15, 15);
+}
+.card:hover .image{
+    opacity:0.9;
+}
+.card p{
+    color:rgba(255, 255, 255, 0.3);
+}
+.card p:hover{
+    color:var(--powder);
+}
+.card span{
+    font-size: 1.2rem;
+}
+.imageContainer{
+    height:60%;
+    overflow: hidden;
+    width: 90%;
+    position: relative;
+    border-radius: 1rem;
+}
+.imageContainer:hover{
+    cursor:pointer;
+}
+.image{
+    width:100%;
+    height:auto;
+    opacity:0.6;
+    border-radius: 1rem;
+}
+
+.imageContainer::after{
+    width:100%;
+    height:100%;
+    content:" ";
+    position: absolute;
+    top:0;
+    left:0;
+}
+/*-----------carousel----------*/
+.carousel {
+    position: relative;
+    width: 100%;
+    height:auto;
+    overflow: hidden;
+    border-radius: 16px;
+}
+.track {
+    display: flex;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.slide {
+    width:100%;
+    height:100%;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slide video{
+    width: auto;
+    height: 17rem;
+    border-radius: 16px;
+}
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
