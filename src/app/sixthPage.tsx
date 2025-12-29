@@ -3,25 +3,24 @@
 import React, { useState } from "react";
 
 import sixthPageCSS from "./sixthPageCSS.module.css";
-import Image from "next/image";
-import image1 from "./assets/project showcase/purrezza1.jpg";
-import image2 from "./assets/project showcase/purrezza2.jpg";
-import image3 from "./assets/project showcase/purrezza3.jpg";
-import image4 from "./assets/project showcase/purrezza4.jpg";
-import Link from "next/link";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckSquare, faCircleUser, faHeart, faLink, faPaperPlane, faShare } from "@fortawesome/free-solid-svg-icons";
 
 import ImageLightbox from "../components/ImageLightbox";
 
+import Carousel from "./Carousel";
 
 const sixthPage = () => {
 const [activeImage, setActiveImage] = useState<string | null>(null);
   return (
       <div className={sixthPageCSS.sixthPageMainContainer}>
-          <h1>Multimedia & Design</h1>
-          <div className={sixthPageCSS.leftContainer}>
+        <h1>Multimedia & Design</h1>
+      <h2>Transforming business <span>concepts</span> into visually compelling designs</h2>
+      <div className={sixthPageCSS.introductionContainer}>
+            <p>I had the opportunity to create and design product menus for Purrezza last December 15, 2024, a business that offers refreshing drinks like lemonades and delicious food options. My goal was to craft a visually appealing and user-friendly menu that enhances the customer experience while staying true to Purrezza's brand identity.</p>
+      </div>
+          {/* <div className={sixthPageCSS.leftContainer}>
               <h2>Purrezza Product Design</h2>
               <div className={sixthPageCSS.card}>
                   <div className={sixthPageCSS.reactionsContainer}>
@@ -43,6 +42,7 @@ const [activeImage, setActiveImage] = useState<string | null>(null);
                          Purrezza-Product-Design</Link></p>
                   </div>
               </div>
+        
         </div>
           <div className={sixthPageCSS.rightContainer}>
               
@@ -52,8 +52,10 @@ const [activeImage, setActiveImage] = useState<string | null>(null);
               <Image className={sixthPageCSS.image2} src={image3} alt="Purrezza photo" onClick={() => setActiveImage(image3.src)}/>
               <Image className={sixthPageCSS.image2} src={image4} alt="Purrezza photo" onClick={() => setActiveImage(image4.src)}/>
             </div>
-          </div>
-          
+      </div> */}
+
+      <Carousel/>
+     
                    <ImageLightbox
                         imageSrc={activeImage}
                         onClose={() => setActiveImage(null)}
