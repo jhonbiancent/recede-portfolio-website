@@ -1,0 +1,86 @@
+.carousel {
+  position: relative;
+  width: 90%;
+  height: 50vh;
+  padding-left: 5%;
+  padding-right: 5%;
+  border:1px solid rgba(255, 255, 255, 0.1);
+    background: linear-gradient(to right, rgb(5, 5, 27), black);
+}
+.carousel:after{
+  content:"";
+  width:100%;
+  height:15vh;
+  background:linear-gradient(to bottom,rgb(5, 5, 27), rgba(0, 0, 0, 0) );
+  left:0;
+  position: absolute;
+  bottom:-80;
+  z-index: -1;
+}
+.track:before{
+  position: absolute;
+  height:100%;
+  width:10vw;
+  content: "";
+  backdrop-filter: blur(5px);
+  background: linear-gradient(to right,black,rgba(0, 0, 0, 0));
+  z-index: 3;;
+  left:0;
+  top:0;
+}
+.track:after {
+  position: absolute;
+  height: 100%;
+  width: 10vw;
+  content: "";
+  backdrop-filter: blur(5px);
+  background: linear-gradient(to left, black, rgba(0, 0, 0, 0));
+  top:0;
+  right: 0;
+}
+.track {
+  align-items: center;
+  display: flex;
+  background-color:rgba(5, 5, 27, 0.05);
+  height: 100%;
+  overflow-x: auto;
+  cursor: grab;
+  gap:5rem;
+
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.track::-webkit-scrollbar {
+  display: none;
+}
+
+.track:active {
+  cursor: grabbing;
+}
+
+.slide {
+  flex: 0 0 auto;
+  min-width: max-content;
+  height: 90%;
+}
+
+.slide img {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  user-select: none;
+  pointer-events: none;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: 0.5s linear;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border:solid 1px white;
+  opacity:0.5;
+}
+.madeWithContainer {
+  position: absolute;
+  bottom: -50;
+  right: 70;
+  color:rgba(255, 255, 255, 0.3);
+}

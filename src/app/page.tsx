@@ -18,12 +18,14 @@ export default function Home() {
         sparkCount={8}
         duration={400}
       >
-          <NavigationBar/>
-         <FirstPage />
-         <SecondPage />
-         <HobbyPage />
+        <NavigationBar/>
+        <FirstPage />
+        <SecondPage />
+        <HobbyPage />
         <ThirdPage />
-        <FourthPage/>
+        <FourthPage />
+        <FifthPage/>
+        <SixthPage/>
         <Darkgradient/>
       </ClickSpark>
     </>

@@ -3,14 +3,46 @@
     top: 420vh;
     left: 0;
     width: 100vw;
-    height: 300vh;
+    height: 350vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     color: white;
     background-color: black;
+    padding-bottom: 2%;
 }
+
+/*------my main background------*/
+.backgroundContainer{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left:15%;
+}
+
+.backgroundImage{
+    width:100%;
+    height:auto;
+    border-top-left-radius: 1rem;
+    border-top:solid 1px rgba(255, 255, 255, 0.3);
+    border-left: solid 1px rgba(255, 255, 255, 0.3);
+}
+.backgroundContainer section {
+    position: relative;
+    width: 70%;
+    display: flex;
+    overflow: hidden;
+}
+.backgroundContainer section:before{
+    content: "";
+    background:linear-gradient(to right, rgba(0, 0, 0, 0),black);
+    height:100%;
+    width: 100%;
+    position: absolute;
+}
+
 .thirdPageMainContainer:before{
     position: absolute;
     top:10;
@@ -19,15 +51,90 @@
     width:80%;
     background-color: rgba(255, 255, 255, 0.486);
 }
-.thirdPageMainContainer h2{
+.thirdPageMainContainer:after {
+    position: absolute;
+    bottom: 0;
+    content: "";
+    height: 20vh;
+    width:100%;
+    background:linear-gradient(rgba(255, 255, 255, 0.05),black);
+    border-top:solid 1px rgba(255, 255, 255, 0.2);
+}
+.subtitleContainer{
+    position: absolute;
+    width: 38%;
+    backdrop-filter: blur(5px);
+    background:linear-gradient(to right, rgba(50, 50, 219, 0.02) ,black);
+    padding-right:15%;
+    padding-bottom:5%;
+    right:0;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    border-radius: 4rem;
+    transition: 0.5s linear;
+}
+.subtitleContainer:hover{
+    backdrop-filter: blur(2px);
+}
+.subtitleContainer h2{
+    transition: 0.5s linear;
+}
+.subtitleContainer:hover h2 {
+    color:rgba(255, 255, 255, 0.5);
+}
+.subtitleContainer h3{
+    transition: 0.5s linear;
+}
+.subtitleContainer:hover h3{
+    color: var(--light-powder);
+}
+.subtitleContainer p{
+    transition: 0.5s linear;
+}
+.subtitleContainer:hover p{
+    color:rgba(255, 255, 255, 0.5);
+}
+
+.subtitleContainer h2{
     font-size:5rem;
     font-style:italic;
     position:relative;
+    font-family: var(--font-intertight);
 }
-
-.titleContainer{
+.subtitleContainer h3{
+    font-family: var(--font-birthstone);
+    font-size: 6rem;
     position: absolute;
-    top:100;
+    top: 0;
+    color:var(--powder);
+}
+.subtitleContainer p{
+    font-size: 1.2rem;
+    color:rgba(255, 255, 255, 0.3);
+    font-style: italic;
+    margin-top:-5;
+}
+.subtitleContainer:hover button{
+    width: 9rem;
+}
+.button{
+    color:rgba(255, 255, 255, 0.5);
+    width:8rem;
+    height:2.5rem;
+    background-color: transparent;
+    border:solid 2px rgba(255, 255, 255, 0.1);
+    border-radius: 2rem;
+    font-size: 1.1rem;
+    transition: 0.5s linear;
+}
+.button:hover{
+    cursor: pointer;
+    background-color: var(--powder);
+}
+.titleContainer{
+    margin-top: 0;
+    margin-bottom: 25;
 }
 .title{
     font-size:2rem;
@@ -39,30 +146,43 @@
 }
 .landingPageContainer{
     height:20%;
-    width:100%;
+    width:85%;
     display: flex;
     align-items: center;
     position: relative;
-    background-color: rgb(10, 10, 10);
+    background-color: black;
+    border: solid 2px rgba(255, 255, 255, 0.1);
+    border-bottom-left-radius: 1rem;
+    border-top: none;
+    border-right: none;
+    transition: 0.5s linear;
+}
+
+.landingPageContainer:hover p span{
+    color: var(--powder);
 }
 
 .descriptionContainer{
-    width:30%;
+    width:40%;
     height:100%;
     padding-left:2%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap:1%;
     padding-left:5%;
 }
-.descriptionContainer li{
+.descriptionContainer p span{
+    transition: 0.5s linear;
+}
+.descriptionContainer p{
     color:rgba(255, 255, 255, 0.4);
     margin-left:5%;
     font-size: 1.1rem;
 }
+
 .link{
-    margin-top:3%;
-    width:50%;
+    width:45%;
     height:12%;
     color: white;
     text-decoration: none;
@@ -70,8 +190,9 @@
     align-items: center;
     justify-content: center;
     border-radius:8px;
-    margin-left:2%;
+    margin-left:3%;
     transition: 0.2s linear;
+    border:solid 1px rgba(255, 255, 255, 0.1);
 }
 .link:hover{
    background-color: var(--powder);
@@ -83,22 +204,26 @@
     margin-left:2%;
 }
 .title1{
-    font-size:2rem;
+    margin-bottom: 0;
+    font-size:1.7rem;
     font-weight: 400;
+    color:var(--light-powder);
+    font-family: var(--font-lexend);
+    font-weight: 800;
 }
 .carouselContainer{
-    width:50%;
+    width:55%;
     height:100%;
     align-self: flex-end;
     position: absolute;
     display:flex;
     align-items: center;
-    right:40;
+    right:0;
 }
 .apiPageContainer{
     width:100%;
-    height:30%;
-    background-color: black;
+    height:25%;
+    background:radial-gradient(at top right,rgba(5, 5, 27), black);
     display: flex;
     align-items:center;
     justify-content: center;
@@ -116,18 +241,30 @@
     padding:2%;
     gap:6%;
     transition: 0.2s linear;
+    border:solid 1px rgba(255, 255, 255, 0.1);
 }
 .card:hover{
-    background-color: rgb(15, 15, 15);
+    background-color: rgb(12, 12, 12);
+    transform: translateY(-1%);
+}
+.card:hover p{
+    color: var(--powder);
 }
 .card:hover .image{
     opacity:0.9;
 }
 .card p{
     color:rgba(255, 255, 255, 0.3);
+    position: relative;
 }
-.card p:hover{
-    color:var(--powder);
+.card p:before{
+    content:"";
+    width:100%;
+    height:1px;
+    background-color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    left:0;
+    top:-15;
 }
 .card span{
     font-size: 1.2rem;
@@ -157,6 +294,18 @@
     top:0;
     left:0;
 }
+.createdWithContainer{
+    align-self: end;
+    display: flex;
+    justify-content: center;
+    margin-right:10%;
+    margin-top: 0;
+    align-items: center;
+    width:20%;
+    height:10vh;
+    color:rgba(255, 255, 255, 0.3);
+    gap:2%;
+}
 /*-----------carousel----------*/
 .carousel {
     position: relative;
@@ -180,8 +329,9 @@
 }
 .slide video{
     width: auto;
-    height: 17rem;
+    height: 15rem;
     border-radius: 16px;
+    opacity:0.6;
 }
 .prev,
 .next {
@@ -198,9 +348,8 @@
 }
 
 .prev {
-    left: 10px;
+    left:15;
 }
-
 .next {
-    right: 10px;
+    right:15;
 }

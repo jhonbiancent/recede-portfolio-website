@@ -1,6 +1,6 @@
 .fourthPageMainContainer {
     position: absolute;
-    top: 720vh;
+    top: 1000vh;
     left: 0;
     width: 100vw;
     height: 300vh;
@@ -10,7 +10,6 @@
     flex-direction: column;
     color: white;
     background-color: black;
-    gap:5%;
 }
 .title{
     font-size: 2rem;
@@ -34,13 +33,16 @@
 .mainImageContainer{
     width:60%;
     position: relative;
-    align-self: flex-start;
+    transition: 0.2s linear;
+}
+.mainImageContainer:hover{
+    transform: translateY(-1%);
 }
 .mainImageContainer:before{
   content: "";
   position: absolute;
   background: linear-gradient(45deg,black,rgba(0, 0, 0, 0)70%);
-  z-index:3;
+  z-index: 1;
   width:90%;
   height:100vh;
   left:0;
@@ -54,16 +56,27 @@
 
 .secondContainer{
     width:100%;
-    height:100%;
+    height:50%;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+    background:linear-gradient(to top, rgba(5, 5, 27),black)
 }
 .secondContainer h2{
     position: absolute;
     top:50;
-    
+    font-size: 2rem;
+}
+.secondContainer h4{
+    position: absolute;
+    top:100;
+    font-size: 1.4rem;
+    color:rgba(255, 255, 255, 0.3);
+    font-style: italic;
+}
+.secondContainer h4 span{
+    color:var(--powder);
 }
 .secondContainer::before{
     content: "";
@@ -76,27 +89,59 @@
 
 .firstContainer{
     width: 100%;
-    height:50%;
+    height:38%;
     position: relative;
+    display: flex;
+    align-items: center;
 }
 .titleContainer{
-    position: absolute;
-    right: 50;
-    top: 80;
     text-align: end;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
 }
 .titleContainer h1{
-    font-size: 4rem;
+    margin-top: 0;
+    font-size: 4.5rem;
     margin-bottom: 20;
+    color:var(--light-powder);
 }
 .titleContainer span{
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-right: 5;
     color:rgba(255, 255, 255, 0.3);
 }
 .titleContainer p{
     color: rgba(255, 255, 255, 0.3);
     margin-right: 10;
+    font-size: 1.2rem;
+}
+.iconContainer{
+    text-align: end;
+    height:3.5rem;
+    width:13rem;
+    background:linear-gradient(to right, var(--powder),black);
+    margin-bottom: 0;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    opacity:0.7;
+}
+
+.button{
+    width:8rem;
+    height:6vh;
+    font-size: 1.1rem;
+    text-decoration: none;
+    margin-right: 10;
+    background-color: rgb(8, 8, 8);
+    border-radius: 1rem;
+    color:rgba(255, 255, 255, 0.3);
+    border:solid rgba(255, 255, 255, 0.1) 1px;
+    transition: 0.2s linear;
+}
+.button:hover{
+    background-color: var(--powder);
+    cursor: pointer;
 }
 .photoContainer{
     align-self:end;
@@ -110,19 +155,43 @@
     gap: 1%;
 }
 .descriptionContainer{
-    width:45%;
-    padding-left: 5%;
-    padding-top: 10%;
+    width:48%;
+    height:45%;
+    margin-top:17%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left:2%;
+    background-color: rgb(5, 5, 5);
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    transition: 0.2s linear;
+    transform: translateX(-1%);
+    border:solid 1px rgba(255, 255, 255, 0.1);
+    gap:2%;
+    box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.05);
 }
-
+.descriptionContainer h1{
+    color:var(--light-powder);
+    margin-bottom:0;
+}
+.descriptionContainer:hover span{
+    color:var(--powder);
+}
+.descriptionContainer span{
+    transition: 0.5s linear;
+}
+.descriptionContainer:hover{
+    background-color: rgb(10, 10, 10);
+    transform: translateX(0%);
+}
 .descriptionContainer p{
-    color: white;
-   font-size: 1.3rem;
+   color: white;
+   font-size: 1.2rem;
 }
 .descriptionContainer li{
    color:rgba(255, 255, 255, 0.3);
    margin-left: 2%;
-   font-size: 1.1rem;
 }
 .photo1{
     width:85%;
@@ -140,14 +209,13 @@
 }
 .secondPhotoContainer{
     width:100%;
-    height:25%;
+    height:27%;
     display: flex;
     align-items: center;
     justify-content: center;
     gap:1%;
 }
 .link {
-    margin-top: 3%;
     width: 13rem;
     height: 3rem;
     color: white;
@@ -157,8 +225,11 @@
     justify-content: center;
     border-radius: 8px;
     transition: 0.2s linear;
+    border:solid 1px rgba(255, 255, 255, 0.1);
 }
-
+.link p{
+    font-size: 1rem;
+}
 .link:hover {
     background-color: var(--powder);
 }
@@ -181,4 +252,10 @@
 }
 .icon {
     margin-left: 2%;
+}
+.madeWithContainer{
+    position: absolute;
+    bottom:20;
+    right:70;
+    color:rgba(255, 255, 255, 0.3);
 }

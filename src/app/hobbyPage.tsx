@@ -1,7 +1,7 @@
 import React from 'react'
 import hobbyStyle from "./hobbyPageCSS.module.css"
 import Image from "next/image";
-import image1 from "./assets/project showcase/hobby.png"
+import image1 from "./assets/project-showcase/hobby.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faComputer, faLightbulb} from "@fortawesome/free-solid-svg-icons"; 
 

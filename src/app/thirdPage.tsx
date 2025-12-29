@@ -1,54 +1,76 @@
 "use client";
 import { useState } from "react";
-import thirdPageCSS from "./thirdPageCSS.module.css";
+import style from "./thirdPageCSS.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import Carousel from "./snapCarousel";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight, faLink, faLocationDot } from "@fortawesome/free-solid-svg-icons"; 
-import image1 from "./assets/project showcase/nihon-trails-api-integration1.png";
-import image2 from "./assets/project showcase/nihon-trails-api-integration2.png";
-import image3 from "./assets/project showcase/nihon-trails-api-integration3.png";
+import { faNodeJs, faReact } from "@fortawesome/free-brands-svg-icons"; 
+import { faArrowLeft, faArrowRight, faLink, faLocationDot } from "@fortawesome/free-solid-svg-icons"; 
+import image1 from "./assets/project-showcase/nihon-trails-api-integration1.png";
+import image2 from "./assets/project-showcase/nihon-trails-api-integration2.png";
+import image3 from "./assets/project-showcase/nihon-trails-api-integration3.png";
+import backgroundImage from "./assets/others/japan-background.jpg";
+
 
 import ImageLightbox from "../components/ImageLightbox";
 
 const thirdPage = () => {
     const [activeImage, setActiveImage] = useState<string | null>(null);
   return (
-    <div className={thirdPageCSS.thirdPageMainContainer}>
-      <div className={thirdPageCSS.titleContainer}>
-         <p className={thirdPageCSS.title}>Sample of my Website Projects</p>
-          <p className={thirdPageCSS.subtitle}>Web development with clarity, precision, and purpose.</p>
+    <div className={style.thirdPageMainContainer}>
+      <div className={style.titleContainer}>
+         <p className={style.title}>Sample of my Website Projects</p>
+          <p className={style.subtitle}>Web development with clarity, precision, and purpose.</p>
       </div>
-        <h2>Nihon Trails</h2>
-      <div className={thirdPageCSS.landingPageContainer}>
-        <div className={thirdPageCSS.descriptionContainer}>
-          <p className={thirdPageCSS.title1}><FontAwesomeIcon icon={faLocationDot}/> Explore Japan</p>
-          <li>A web-based travel planning tool for tourists preparing to explore Japan</li>
-          <li>Highlights scenic destinations, notable tourist attractions, and thoughtfully curated itineraries</li>
-          <li>This project integrates data and services from an existing third-party website</li>
-          <Link className={thirdPageCSS.link} href="https://nihon-trails.vercel.app"><span>Continue to website </span><FontAwesomeIcon className={thirdPageCSS.icon} icon={faArrowRight} /></Link>
+      <div className={style.backgroundContainer}>
+        <section><Image className={style.backgroundImage} src={backgroundImage} alt={"japan bg"} /></section>
+
+        <div className={style.subtitleContainer}>
+           <h2>Nihon Trails</h2>
+          <h3>Explore Japan</h3>
+          <p>Experience Japan beyond the ordinary</p>
+          <Link href="https://nihon-trails.vercel.app">
+              <button className={style.button}><FontAwesomeIcon icon={faArrowLeft} /> visit site</button>
+          </Link>
         </div>
-          <div className={thirdPageCSS.carouselContainer}>
+
+      </div>
+
+      <div className={style.landingPageContainer}>
+        <div className={style.descriptionContainer}>
+          <h3 className={style.title1}><FontAwesomeIcon icon={faLocationDot}/> START YOUR JOURNEY</h3>
+          <p>A web-based <span>travel planning tool</span> for tourists preparing to explore Japan. 
+            <span> Highlights</span> scenic destinations, notable tourist attractions, and thoughtfully curated itineraries
+            . This project integrates data and services from an existing <span>third-party website</span>
+          </p>
+          <Link className={style.link} href="https://nihon-trails.vercel.app"><span>Continue to website </span><FontAwesomeIcon className={style.icon} icon={faArrowRight} /></Link>
+        </div>
+          <div className={style.carouselContainer}>
               <Carousel />
         </div>
       </div>
-      <div className={thirdPageCSS.apiPageContainer}>
-        <div className={thirdPageCSS.card}>
-          <div className={thirdPageCSS.imageContainer} onClick={() => setActiveImage(image1.src)}><Image className={thirdPageCSS.image}  src={image1} alt="api integration"/></div>
+
+      <div className={style.apiPageContainer}>
+
+        <div className={style.card} onClick={() => setActiveImage(image1.src)}>
+          <div className={style.imageContainer}><Image className={style.image}  src={image1} alt="api integration"/></div>
           <span>Maps API Integration</span>
           <p>Allows users to visually see their target destionations and allows them to specify the area</p>
         </div>
-          <div className={thirdPageCSS.card}>
-           <div className={thirdPageCSS.imageContainer} onClick={() => setActiveImage(image2.src)}><Image className={thirdPageCSS.image}  src={image2} alt="api integration"/></div>
+          <div className={style.card} onClick={() => setActiveImage(image2.src)}>
+           <div className={style.imageContainer}><Image className={style.image}  src={image2} alt="api integration"/></div>
           <span>Tourist Spots in Proximity</span>
           <p>Shows famous tourist spots in selected area helping users to properly set their itineraries</p>
         </div>
-        <div className={thirdPageCSS.card}>
-           <div className={thirdPageCSS.imageContainer} onClick={() => setActiveImage(image3.src)}><Image className={thirdPageCSS.image}  src={image3} alt="api integration" /></div>
+        <div className={style.card} onClick={() => setActiveImage(image3.src)}>
+           <div className={style.imageContainer}><Image className={style.image}  src={image3} alt="api integration" /></div>
           <span>Japan Region Overview</span>
           <p>Highlights Japan's regions, giving tourists the opportunity to explore Japan virtually</p>
         </div>
+      </div>
+      <div className={style.createdWithContainer}>
+        <span>made with</span><p> | </p><span>React<FontAwesomeIcon icon={faReact}/></span><span>Node.js<FontAwesomeIcon icon={faNodeJs}/></span>
       </div>
             <ImageLightbox
         imageSrc={activeImage}

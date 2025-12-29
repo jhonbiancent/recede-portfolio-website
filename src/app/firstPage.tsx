@@ -1,3 +1,4 @@
+"use client";
 import React from 'react'
 import firstPageCSS from "./firstPageCSS.module.css";
 import Image from "next/image";
@@ -7,10 +8,14 @@ import icnFacebook from "./assets/icons/icon-facebook.png";
 import icnMessenger from "./assets/icons/icon-messenger.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMobileScreen, faLaptopCode, faArrowRight, faGamepad, faComputer} from "@fortawesome/free-solid-svg-icons"; 
+import LiquidEther from "../components/LiquidEther";
 
 const firstPage = () => {
   return (
-      <div className={firstPageCSS.firstPageMainContainer}>
+    <div className={firstPageCSS.firstPageMainContainer}>
+      <div style={{ width: '100%', height: 600, position: 'absolute' }}>
+  <LiquidEther/>
+</div>
           <div className={firstPageCSS.developerImageSide}>
               <div className={firstPageCSS.developerRGB }>
                   <div className={firstPageCSS.developerPhotoContainer}>

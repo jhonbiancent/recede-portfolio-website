@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Karla, Lora, Lexend, Inter_Tight} from "next/font/google";
+import { Karla, Lora, Lexend, Inter_Tight, Birthstone} from "next/font/google";
 import { Analytics } from "@vercel/analytics/next"; 
 
 import "../lib/fontawesome";
@@ -28,6 +28,12 @@ const intertight = Inter_Tight({
   variable: "--font-intertight",
 })
 
+const birthstone = Birthstone({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-birthstone",
+})
+
 export const metadata: Metadata = {
   title: "Recede Portfolio WebApp",
   description:
@@ -42,7 +48,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${karla.variable} ${lora.variable}  ${lexend.variable}  ${intertight.variable} antialiased`}
+        className={`${karla.variable} ${lora.variable}  ${birthstone.variable} ${lexend.variable}  ${intertight.variable} antialiased`}
                                                                     >
         {children}
         <Analytics/>
