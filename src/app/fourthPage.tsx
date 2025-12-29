@@ -15,6 +15,8 @@ import { faArrowRight, faBiohazard, faGamepad, faHeartPulse, faLink } from "@for
 import ImageLightbox from "../components/ImageLightbox";
 import { faCss, faJs } from "@fortawesome/free-brands-svg-icons";
 
+import AnimatedContent from "@/components/AnimatedContent";
+
 export default function fourthPage() {
   const [activeImage, setActiveImage] = useState<string | null>(null);
 
@@ -22,15 +24,20 @@ export default function fourthPage() {
     <div className={style.fourthPageMainContainer}>
 
       <div>
-        <p className={style.title}>When Web Development meets Game Development</p>
-        <p className={style.subtitle}>Ideas shaped through design thinking.</p>
+        <AnimatedContent direction="horizontal" reverse duration={1} ease="power2.out">
+          <p className={style.title}>When Web Development meets Game Development</p>
+        </AnimatedContent>
+       <AnimatedContent direction="horizontal" reverse duration={1} ease="power2.out" delay={0.15}>
+          <p className={style.subtitle}>Ideas shaped through design thinking.</p>
+        </AnimatedContent>
       </div>
       
       <div className={style.firstContainer}>
 
-        <div className={style.mainImageContainer}>
+         <AnimatedContent className={style.mainImageContainer} direction="horizontal" reverse duration={1.5} ease="power2.out" distance={50} threshold={0.2}>
           <Image className={style.mainImage} src={mainImage} alt="Starlight Void"/>
-        </div>
+        </AnimatedContent>
+        
         <div className={style.titleContainer}>
           <div className={style.iconContainer}>
             <p>Game Development</p>

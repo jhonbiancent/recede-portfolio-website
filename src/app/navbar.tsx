@@ -1,4 +1,4 @@
-import React from 'react'
+"use client";
 import Image from "next/image";
 import devLogo from "./assets/RCDE- Productions Logo.png";
 import navBarCSS from "./navbar.module.css";
@@ -13,10 +13,21 @@ const navbar = () => {
       <div className={navBarCSS.navBarMainContainer}>
            <Image className={navBarCSS.logo} src={devLogo} alt="RCDE Productions"/>
           <div>
-            <p><FontAwesomeIcon icon={faHome} /> Home</p>
-            <p><FontAwesomeIcon icon={faGraduationCap} /> Education</p>
-            <p><FontAwesomeIcon icon={faHandsHoldingCircle} /> Skills</p>
-            <p><FontAwesomeIcon icon={faPhone} /> Contact</p>
+            <p  onClick={() => {
+    document.getElementById("about")?.scrollIntoView({
+      behavior: "smooth"
+    });
+  }}><FontAwesomeIcon icon={faHome} /> Home</p>
+            <p  onClick={() => {
+    document.getElementById("education")?.scrollIntoView({
+      behavior: "smooth"
+    });
+  }}><FontAwesomeIcon icon={faGraduationCap} /> Education</p>
+            <p  onClick={() => {
+    document.getElementById("projects")?.scrollIntoView({
+      behavior: "smooth"
+    });
+  }}><FontAwesomeIcon icon={faHandsHoldingCircle} /> Projects</p>
         </div>
     </div>
   )

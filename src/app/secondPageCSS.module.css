@@ -12,7 +12,7 @@
 }
 .mainContainer{
     overflow: hidden;
-    border:white 1px solid;
+    border:rgba(255, 255, 255, 0.3) 1px solid;
     border-radius: 2rem;
     width:85%;
     height:80%;
@@ -22,6 +22,7 @@
     flex-direction: column;
     padding:1%;
     padding-top:2%;
+    background:radial-gradient(rgba(5, 5, 27, 0.8), black);
 }
 
 .detailsContainer{

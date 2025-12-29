@@ -1,0 +1,72 @@
+.footerBody{
+    width:100%;
+    height:40vh;
+    background:linear-gradient(to bottom,var(--space-blue),rgb(10, 10, 10));
+    position: absolute;
+    bottom:0;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    gap:2%;
+    padding-bottom: 2%;
+    list-style-type:none ;
+}
+.footerBody h5{
+    font-size: 1.6rem;
+    margin-bottom: 0;
+}
+.footerBody li{
+    color:rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+}
+.link{
+    text-decoration: none;
+}
+.footerBody li:hover{
+    color:var(--powder);
+    cursor: pointer;
+}
+.icon{
+    height: 50%;
+    width: auto;
+}
+.navigationSection{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    height:90%;
+    width:20vw;
+    gap:5%;
+}
+.contactsSection {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    text-align: start;
+    height: 90%;
+    width: 20vw;
+    gap: 5%;
+}
+.downloadSection{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    text-align: start;
+    height: 90%;
+    width: 20vw;
+    gap: 5%;
+}
+.downloadSection button{
+    width:50%;
+    border:none;
+    padding:2%;
+    border-radius: 1rem;
+    transition: 0.2s linear;
+}
+.downloadSection button:hover{
+    background-color: var(--light-powder);
+    cursor: pointer;
+    color:white;
+}

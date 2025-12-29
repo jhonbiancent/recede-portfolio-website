@@ -53,6 +53,7 @@
     height:15%;
     display:flex;
     justify-content: center;
+    background: radial-gradient(rgba(5, 5, 27, 0.8),black);
     gap:5%;
 }
 .card{

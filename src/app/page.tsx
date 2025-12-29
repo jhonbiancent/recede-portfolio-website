@@ -8,6 +8,7 @@ import SixthPage from "./sixthPage";
 import NavigationBar from "./navbar";
 import ClickSpark from "../components/ClickSpark";
 import Darkgradient from "./darkgradient";
+import Footer from "./Footer";
 export default function Home() {
   return (
     <>
@@ -26,7 +27,8 @@ export default function Home() {
         <FourthPage />
         <FifthPage/>
         <SixthPage/>
-        <Darkgradient/>
+        <Darkgradient />
+        <Footer/>
       </ClickSpark>
     </>
   );

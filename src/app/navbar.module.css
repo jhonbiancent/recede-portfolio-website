@@ -26,6 +26,7 @@
   align-items: center;
   gap:5%;
   padding-right: 1%;
+  padding-right: 5%;
 }
 .navBarMainContainer p{
     position: relative;
@@ -39,10 +40,10 @@
 .navBarMainContainer p::after{
    content:" ";
    position: absolute;
-   top:25;
-   left:0;
-   width:100%;
-   height:3px;
+   top:30;
+   right:0;
+   width:0%;
+   height: 1px;
    background-color: white;
    border-radius: 2px;
    transition: ease-in 0.4s;
@@ -50,6 +51,7 @@
 }
 .navBarMainContainer p:hover::after {
     opacity: 1;
+    width: 100%;
 }
 /*----------my dark gradient effect------------*/
 .darkgradient{
