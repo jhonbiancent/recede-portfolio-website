@@ -1,6 +1,5 @@
 
 "use client";
-import React, { useState } from "react";
 import Image from "next/image";
 
 import style from "./sixthPageCSS.module.css";
@@ -14,13 +13,13 @@ import Carousel from "./Carousel";
 import AnimatedContent from "@/components/AnimatedContent";
 
 const sixthPage = () => {
-const [activeImage, setActiveImage] = useState<string | null>(null);
   return (
       <div className={style.sixthPageMainContainer}>
         <h1>Multimedia & Design</h1>
       <h2>Transforming business <span>concepts</span> into visually compelling designs</h2>
 
       <div className={style.introductionContainer}>
+
         <section className={style.introduction}>
           <section className={style.iconContainer}>
               <span><FontAwesomeIcon icon={faPalette} /> layout design</span>
@@ -32,8 +31,8 @@ const [activeImage, setActiveImage] = useState<string | null>(null);
           </Link>
         </section>
 
-        <AnimatedContent duration={1} direction={"horizontal"} distance={10}ease="power2.out" delay={0.5}>
-          <div><Image className={style.bgImage} src={image1} alt={"photo editing"} /></div>
+        <AnimatedContent   className={style.imageContainer} duration={1} direction={"horizontal"} distance={10}ease="power2.out" delay={0.5}>
+          <Image className={style.bgImage} src={image1} alt={"photo editing"} />
         </AnimatedContent>
       </div>
 

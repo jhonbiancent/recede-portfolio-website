@@ -70,3 +70,30 @@
     cursor: pointer;
     color:white;
 }
+@media (max-width: 640px) {
+    .footerBody{
+        height:20vh;
+        gap:5%;
+    }
+    .footerBody h5{
+        font-size: 0.9rem;
+    }
+    .icon{
+        height:15%;
+        width: auto;
+    }
+    .contactsSection, .downloadSection, .navigationSection{
+        width:22%;
+    }
+    .downloadSection{
+        margin-left: 10%;
+    }
+    .footerBody li{
+        font-size: 0.6rem;
+    }
+    .downloadSection button{
+        font-size: 0.6rem;
+        width:90%;
+        border-radius: 0.5rem;
+    }
+}

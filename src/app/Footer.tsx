@@ -2,7 +2,7 @@
 import style from "./Footer.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import logo from "./assets/RCDE- Productions Logo.png";
+import logo from "./assets/icons/RCDE- Productions Logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons';
@@ -13,7 +13,7 @@ const Footer = () => {
       <div className={style.navigationSection}>
         <h5>NAVIGATION</h5>
         <li onClick={() => {
-    document.getElementById("about")?.scrollIntoView({
+    document.getElementById("home")?.scrollIntoView({
       behavior: "smooth"
     });
   }}>About Me</li>

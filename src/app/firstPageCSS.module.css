@@ -58,8 +58,6 @@ body{
     inset: 0;
     scale:1.2;
     position: absolute;
-    /* background-image: url("./assets/noise.jpg"); */
-    /* animation: grain 8s infinite; */
     opacity: 0.06;
     pointer-events: none;
 }
@@ -189,4 +187,53 @@ body{
 }
 .icnButtons:hover{
     cursor: pointer;
+}
+@media (max-width: 640px) {
+    body{
+        height:1050vh;
+    }
+    .firstPageMainContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .developerImageSide{
+        height:20%;
+        width: 100%;
+        padding-top: 30%;
+    }
+    .developerRGB{
+        width:13rem;
+        height:13rem;
+    }
+    .developerDescriptionSide{
+        gap:2%;
+        height:70%;
+        width: 100%;
+        padding-left:15%;
+    }
+    .developerNickname{
+        font-size: 3.5rem;
+    }
+    .developerName{
+        font-size: 1.7rem;
+    }
+    .developerRGB::after {
+        width: 25rem;
+        height: 25rem;
+    }
+    .developerSkills{
+        font-size: 1.4rem;
+    }
+    .moreButtonsSection {
+        width: 100%;
+    }
+    .getInTouchButton{
+        width:35%;
+    }
+    .developerSkillsDescription span{
+        color:white;
+    }
+    .firstPageMainContainer::after{
+        bottom:2%;
+    }
 }

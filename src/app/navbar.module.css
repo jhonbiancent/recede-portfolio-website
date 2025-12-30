@@ -62,3 +62,17 @@
     bottom:0;
     pointer-events: none;
 }
+@media (max-width: 640px) {
+    .logo{
+        width: 20%;
+        height:auto;
+    }
+
+    .navBarMainContainer{
+        height:5vh;
+    }
+    .navBarMainContainer p {
+        font-size: 0.9rem;
+    }
+
+}

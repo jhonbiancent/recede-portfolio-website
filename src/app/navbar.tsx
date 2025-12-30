@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import devLogo from "./assets/RCDE- Productions Logo.png";
+import devLogo from "./assets/icons/RCDE- Productions Logo.png";
 import navBarCSS from "./navbar.module.css";
 import "../lib/fontawesome";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -14,7 +14,7 @@ const navbar = () => {
            <Image className={navBarCSS.logo} src={devLogo} alt="RCDE Productions"/>
           <div>
             <p  onClick={() => {
-    document.getElementById("about")?.scrollIntoView({
+    document.getElementById("home")?.scrollIntoView({
       behavior: "smooth"
     });
   }}><FontAwesomeIcon icon={faHome} /> Home</p>

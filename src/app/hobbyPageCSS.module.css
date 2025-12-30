@@ -96,3 +96,62 @@
     margin-left: 5%;
     font-style: italic;
 }
+@media (max-width: 640px) {
+    .hobbyMainPageContainer {
+        top:200vh;
+        height:100vh;
+        text-align: center;
+        gap:5%;
+    }
+    .hobbyMainPageContainer::before{
+        content: "";
+        width: 100%;
+        height:5rem;
+        background:linear-gradient(to bottom, rgba(255, 255, 255, 0.1),rgba(0, 0, 0, 0));
+        top:0;
+        left:0;
+        position: absolute;
+    }
+     .hobbyMainPageContainer::after{
+        content: "";
+        width: 100%;
+        height:1px;
+        background-color: rgba(255, 255, 255, 0.2);
+        top:0;
+        left:0;
+        position: absolute;
+    }
+    .text{
+        margin-top: 0;
+    }
+    .imageContainer{
+        width:100vw;
+    }
+    .image{
+        border-top-left-radius:1rem;
+        width:80%;
+        height:auto;
+        margin-left: 0;
+    }
+    .textHighlightHeader{
+        font-size: 1.3rem;
+    }
+    .text2{
+        margin-top: 5;
+    }
+    .cardContainer{
+        height:25%;
+    }
+    .card{
+        width:40%;
+        border:solid 1px rgba(255, 255, 255, 0.2);
+        text-align: start;
+        padding:2%;
+    }
+    .titleArea p{
+        font-size: 1rem;
+    }
+    .description, .description2{
+        font-size: 1rem;
+    }
+}

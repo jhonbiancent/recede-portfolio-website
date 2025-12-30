@@ -2,7 +2,7 @@
 import style from "./firstPageCSS.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import devPhoto from "./assets/PROFILE-PICTURE.jpg"
+import devPhoto from "./assets/icons/PROFILE-PICTURE.jpg"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMobileScreen, faLaptopCode, faArrowRight, faGamepad, faComputer} from "@fortawesome/free-solid-svg-icons"; 

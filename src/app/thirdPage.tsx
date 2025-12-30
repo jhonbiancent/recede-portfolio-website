@@ -43,7 +43,7 @@ const thirdPage = () => {
             <span> Highlights</span> scenic destinations, notable tourist attractions, and thoughtfully curated itineraries
             . This project integrates data and services from an existing <span>third-party website</span>
           </p>
-          <Link className={style.link} href="https://nihon-trails.vercel.app"><span>Continue to website </span><FontAwesomeIcon className={style.icon} icon={faArrowRight} /></Link>
+          <Link className={style.link} href="https://nihon-trails.vercel.app"><p>Continue to website <FontAwesomeIcon icon={faArrowRight} /></p></Link>
         </div>
           <div className={style.carouselContainer}>
               <Carousel />

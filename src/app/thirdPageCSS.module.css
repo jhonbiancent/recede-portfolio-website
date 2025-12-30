@@ -353,3 +353,113 @@
 .next {
     right:15;
 }
+
+@media (max-width: 640px) {
+    .thirdPageMainContainer {
+        top:300vh;
+        height:170vh;
+        justify-content: start;
+        padding-top: 5%;
+        padding-bottom:0;
+    }
+    .thirdPageMainContainer::before{
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+    .titleContainer{
+        margin-top: 10%;
+        padding-left:10%;
+    }
+    .title{
+        font-size: 1.5rem;
+    }
+    .subtitle{
+        font-size: 1rem;
+        margin-top: 10;
+    }
+    .backgroundContainer{
+        margin-top: 15%;
+        padding-left:9.5%;
+    }
+    .backgroundImage{
+        border:solid 1px rgba(255, 255, 255, 0.6);
+    }
+    .subtitleContainer{
+        height:15vh;
+        border-radius: 1rem;
+    }
+    .subtitleContainer h2{
+        font-size: 2rem;
+    }
+    .subtitleContainer h3{
+        font-size: 2.5rem;
+    }
+    .subtitleContainer p{
+        font-size: 0.7rem;
+        text-align: end;
+    }
+    .button{
+        width:6rem;
+        height:2rem;
+        font-size: 0.8rem;
+    }
+    .button:hover{
+        width:7rem;
+        height:2rem;
+    }
+
+    /*---------second page container---------*/
+    .landingPageContainer{
+        width:90%;
+        height:30%;
+        flex-direction: column;
+    }
+    .descriptionContainer{
+        height:60%;
+        width: 95%;
+    }
+    .title1{
+        font-size: 1.5rem;
+    }
+    .descriptionContainer p{
+        font-size: 0.9rem;
+    }
+    .link{
+        border:solid 1px rgba(255, 255, 255, 0.3);
+        font-size: 0.9rem;
+        padding:1%;
+        width:11rem;
+    }
+    .descriptionContainer span{
+        color:var(--light-powder);
+    }
+    .carouselContainer{
+        height:50%;
+        width: 95%;
+        bottom:0;
+        left:15;
+    }
+    /*------carousel----*/
+   .slide video {
+       width: auto;
+       height: 9rem;
+   }
+   .apiPageContainer{
+        height:18%;
+        padding-top:10%;
+   }
+   .card{
+        height:90%;
+        width: 24%;
+   }
+   .card span{
+        font-size: 0.8rem;
+   }
+   .card p{
+      font-size: 0.7rem;
+  }
+  .createdWithContainer{
+    width:70%;
+    margin-right:0;
+  }
+}

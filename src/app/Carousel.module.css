@@ -84,3 +84,11 @@
   right: 70;
   color:rgba(255, 255, 255, 0.3);
 }
+@media (max-width: 640px) {
+    .carousel{
+      height:30vh;
+    }
+    .madeWithContainer {
+      bottom: -30;
+  }
+}

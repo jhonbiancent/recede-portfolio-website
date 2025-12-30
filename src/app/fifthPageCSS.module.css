@@ -65,7 +65,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: yellow;
 }
 .wordContainer{
     width:50%;
@@ -272,4 +271,98 @@
 }
 .madeWithContainer span{
     color: white;
+}
+@media (max-width: 640px) {
+    .fifthPageMainContainer{
+        top:820vh;
+        height:190vh;
+        justify-content: start;
+        padding-top: 10%;
+    }
+    .titleContainer{
+        height:10vh;
+    }
+    .titleContainer h1{
+        font-size: 1.2rem;
+    }
+    .titleContainer p{
+        font-size: 0.5rem;
+    }
+    .titleContainer h1::before{
+        left:-70;
+        top:10;
+    }
+    .titleContainer h1::after{
+        right:-70;
+        top:10;
+    }
+    .introductionContainer{
+        flex-direction: column;
+        height:50vh;
+        background: linear-gradient(to bottom, var(--space-blue), black);
+    }
+    .imageContainer{
+        width:100%;
+        height:50%;
+        align-items: center;
+        justify-content: center;
+    }
+    .desktopImage{
+        height:60%;
+        width: auto;
+    }
+    .mobileImage{
+        height:40%;
+        width: auto;
+    }
+    .wordContainer{
+        height:50%;
+        width:90%;
+    }
+    .logoContainer{
+        font-size: 1.7rem;
+    }
+    .wordContainer h3{
+        font-size: 0.8rem;
+    }
+    .wordContainer p{
+        font-size: 0.8rem;
+    }
+    .photoContainer{
+        width:100%;
+        height: auto;
+    }
+   .videoContainer{
+        width: 90%;
+   }
+   .photoContainerPadding{
+    height:8.5vh;
+   }
+   .descriptionContainer h1{
+        font-size: 1rem;
+        height:7vh;
+   }
+   .descriptionContainer h1:before{
+    top:-130;
+    height:15vh;
+   }
+   .descriptionContainer p{
+    margin-left: 10%;
+   }
+   .cardContainer{
+    height:28vh;
+   }
+   .card{
+    width:26%;
+   }
+   .card h3{
+    font-size:0.6rem;
+    text-align: center;
+   }
+   .card li{
+    font-size: 0.7rem;;
+   }
+   .icon{
+    width: 40%;
+   }
 }

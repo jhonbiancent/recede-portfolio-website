@@ -259,3 +259,95 @@
     right:70;
     color:rgba(255, 255, 255, 0.3);
 }
+@media (max-width: 640px) {
+    .fourthPageMainContainer{
+        top:640vh;
+        justify-content: start;
+        height:200vh;
+    }
+    .title{
+        font-size: 1.3rem;
+        margin-left:15%;
+    }
+    .subtitle{
+        font-size: 1.1rem;
+        margin-left: 15%;
+    }
+    .title:before{
+        height:170%;
+    }
+
+    .firstContainer{
+        flex-direction: column;
+        padding-top: 20%;
+        height:60vh;
+    }
+    .mainImageContainer{
+        width:100%;
+    }
+    .mainImageContainer:before{
+        height: 100%;
+    }
+    .titleContainer h1{
+        font-size: 3rem;
+    }
+    .titleContainer span{
+        font-size: 1.5rem;
+    }
+    .titleContainer p{
+        font-size: 1rem;
+    }
+    .button{
+        height:2.3rem;
+        font-size: 1rem;
+        border-radius: 2rem;
+        background-color: var(--powder);
+    }
+    .secondContainer{
+        flex-direction: column;
+        height:100vh;
+        gap:0;
+    }
+    .secondContainer h2{
+        margin-top: 0;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    .secondContainer h4{
+        margin-top: 0;
+        font-size: 1rem;
+    }
+    .descriptionContainer{
+        height:40%;
+        width: 85%;
+        padding-left: 10%;
+        padding-right: 5%;
+    }
+    .descriptionContainer span{
+        color:var(--light-powder);
+    }
+    .descriptionContainer h1{
+        font-size: 1.5rem;
+    }
+    .descriptionContainer p{
+        font-size: 0.9rem;
+    }
+    .descriptionContainer li{
+        font-size: 0.8rem;
+    }
+    .photoContainer{
+        height:35%;
+        width: 100%;
+    }
+    .link{
+        margin-top: 5%;
+        height:4vh;
+        width:52%;
+    }
+    .secondPhotoContainer{
+        height:30%;
+    }
+    .madeWithContainer{
+        bottom:60;
+    }
+}

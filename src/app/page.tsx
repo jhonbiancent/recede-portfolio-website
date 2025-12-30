@@ -24,9 +24,9 @@ export default function Home() {
         <SecondPage />
         <HobbyPage />
         <ThirdPage />
+        <SixthPage/>
         <FourthPage />
         <FifthPage/>
-        <SixthPage/>
         <Darkgradient />
         <Footer/>
       </ClickSpark>
