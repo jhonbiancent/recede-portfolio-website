@@ -274,19 +274,20 @@
 }
 @media (max-width: 640px) {
     .fifthPageMainContainer{
-        top:820vh;
+        top:825vh;
         height:190vh;
         justify-content: start;
         padding-top: 10%;
     }
     .titleContainer{
-        height:10vh;
+        height:12vh;
     }
     .titleContainer h1{
         font-size: 1.2rem;
     }
     .titleContainer p{
         font-size: 0.5rem;
+        margin-top: 0;
     }
     .titleContainer h1::before{
         left:-70;
@@ -308,11 +309,11 @@
         justify-content: center;
     }
     .desktopImage{
-        height:60%;
+        height:80%;
         width: auto;
     }
     .mobileImage{
-        height:40%;
+        height:60%;
         width: auto;
     }
     .wordContainer{
@@ -324,6 +325,7 @@
     }
     .wordContainer h3{
         font-size: 0.8rem;
+        font-weight: 100;
     }
     .wordContainer p{
         font-size: 0.8rem;
@@ -333,7 +335,7 @@
         height: auto;
     }
    .videoContainer{
-        width: 90%;
+        width: 70%;
    }
    .photoContainerPadding{
     height:8.5vh;
@@ -350,17 +352,20 @@
     margin-left: 10%;
    }
    .cardContainer{
-    height:28vh;
+    height:30vh;
    }
    .card{
-    width:26%;
+    width:25%;
+   }
+   .card:after{
+    background-color: rgba(255, 255, 255, 0);
    }
    .card h3{
     font-size:0.6rem;
     text-align: center;
    }
    .card li{
-    font-size: 0.7rem;;
+    font-size: 0.6rem;;
    }
    .icon{
     width: 40%;

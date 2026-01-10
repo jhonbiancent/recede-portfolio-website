@@ -14,7 +14,7 @@ body{
     --lavender:rgb(136, 0, 255);
     --lime: rgba(0, 255, 0, 0.5);
     --darkLime: rgba(0, 255, 0, 0.2);
-    --space-blue:rgba(5, 5, 27);
+    --space-blue:rgba(25, 25, 87, 0.8);
 }
 
 .developerNickname{
@@ -188,47 +188,63 @@ body{
 .icnButtons:hover{
     cursor: pointer;
 }
-@media (max-width: 640px) {
+.bodyPage{
+    margin:0;
+    padding:0;
+    height: 1750vh;
+    overflow-x: hidden;
+    background-color: white;
+    scroll-behavior: smooth;
+}
+@media (max-width: 720px) {
     body{
         height:1050vh;
     }
     .firstPageMainContainer{
+        width:100vw;
         display: flex;
         flex-direction: column;
     }
     .developerImageSide{
-        height:20%;
+        height:30%;
         width: 100%;
-        padding-top: 30%;
+        padding-top: 10%;
     }
     .developerRGB{
-        width:13rem;
-        height:13rem;
+        width:40%;
+        height:78%;
     }
     .developerDescriptionSide{
         gap:2%;
-        height:70%;
+        height:60%;
         width: 100%;
         padding-left:15%;
+        padding-top: 5%;
+        justify-content: start;
     }
     .developerNickname{
-        font-size: 3.5rem;
+        font-size: 2.7rem;
     }
     .developerName{
-        font-size: 1.7rem;
+        font-size: 1.6rem;
     }
     .developerRGB::after {
-        width: 25rem;
-        height: 25rem;
+        width: 15rem;
+        height: 15rem;
     }
     .developerSkills{
-        font-size: 1.4rem;
+        font-size: 0.9rem;
     }
     .moreButtonsSection {
         width: 100%;
+        height:8%;
     }
     .getInTouchButton{
         width:35%;
+    }
+    .developerSkillsDescription{
+        font-size: 0.9rem;
+        color:rgba(255, 255, 255, 0.2);
     }
     .developerSkillsDescription span{
         color:white;

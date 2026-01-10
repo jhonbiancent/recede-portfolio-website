@@ -263,14 +263,15 @@
     .fourthPageMainContainer{
         top:640vh;
         justify-content: start;
-        height:200vh;
+        height:250vh;
+        gap:2%; 
     }
     .title{
-        font-size: 1.3rem;
+        font-size: 1rem;
         margin-left:15%;
     }
     .subtitle{
-        font-size: 1.1rem;
+        font-size: 1rem;
         margin-left: 15%;
     }
     .title:before{
@@ -279,7 +280,7 @@
 
     .firstContainer{
         flex-direction: column;
-        padding-top: 20%;
+        padding-top: 5%;
         height:60vh;
     }
     .mainImageContainer{
@@ -290,15 +291,22 @@
     }
     .titleContainer h1{
         font-size: 3rem;
+        margin: 0;
     }
     .titleContainer span{
         font-size: 1.5rem;
+        margin: 0;
     }
     .titleContainer p{
         font-size: 1rem;
+        margin:10;
+    }
+    .iconContainer{
+        text-align: center;
+        height:20%;
     }
     .button{
-        height:2.3rem;
+        height:2rem;
         font-size: 1rem;
         border-radius: 2rem;
         background-color: var(--powder);
@@ -311,7 +319,8 @@
     .secondContainer h2{
         margin-top: 0;
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 1rem;
+        width: 80%;
     }
     .secondContainer h4{
         margin-top: 0;
@@ -322,15 +331,14 @@
         width: 85%;
         padding-left: 10%;
         padding-right: 5%;
-    }
-    .descriptionContainer span{
-        color:var(--light-powder);
+        margin-top: 30%;
     }
     .descriptionContainer h1{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     .descriptionContainer p{
-        font-size: 0.9rem;
+        font-size: 0.8rem;
+        font-weight: 100;
     }
     .descriptionContainer li{
         font-size: 0.8rem;
@@ -338,16 +346,20 @@
     .photoContainer{
         height:35%;
         width: 100%;
+        margin-top:5%;
     }
     .link{
         margin-top: 5%;
-        height:4vh;
+        height:2.2rem;
         width:52%;
     }
     .secondPhotoContainer{
-        height:30%;
+        height:40%;
     }
     .madeWithContainer{
-        bottom:60;
+        bottom:5;
+    }
+    .madeWithContainer span{
+        font-size: 0.8rem;
     }
 }

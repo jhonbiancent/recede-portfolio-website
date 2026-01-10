@@ -50,6 +50,7 @@ export default function RootLayout({
       <body
         className={`${karla.variable} ${lora.variable}  ${birthstone.variable} ${lexend.variable}  ${intertight.variable} antialiased`}
                                                                     >
+                                                                     
         {children}
         <Analytics/>
       </body>

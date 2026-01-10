@@ -72,8 +72,8 @@
 }
 @media (max-width: 640px) {
     .footerBody{
-        height:20vh;
-        gap:5%;
+        height:25vh;
+        gap:0;
     }
     .footerBody h5{
         font-size: 0.9rem;
@@ -89,7 +89,7 @@
         margin-left: 10%;
     }
     .footerBody li{
-        font-size: 0.6rem;
+        font-size: 0.5rem;
     }
     .downloadSection button{
         font-size: 0.6rem;
